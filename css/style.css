@@ -21,7 +21,7 @@ body{
 }
 
 .principal{
-    background-image: url(/img/Background.png);
+    background-image: url(../img/Background.png);
     background-repeat: no-repeat; /*nao repetir a imagem*/
     background-size: contain; /*preencher a imagem*/
     align-items: center;

@@ -1,0 +1,174 @@
+:root{
+    --branco-principal: #ffffff;
+    --cinza-secundaria: #c0c0c0;
+    --botao-azul: #167bf7;
+    --cor-do-fundo: #00030c;
+    --fonte-principal:'Inter';
+    --botao-azul-efeito: #68a4ed;
+}
+
+body{
+    background-color: var(--cor-do-fundo);
+    color: var(--branco-principal); 
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400; /*o pai da fonte*/
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.principal{
+    background-image: url(../img/Background.png);
+    background-repeat: no-repeat; /*nao repetir a imagem*/
+    background-size: contain; /*preencher a imagem*/
+    align-items: center;
+    text-align: center; /*consegue alinhar todos elementos inline dentro bloco*/
+}
+
+.container_titulo{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container{
+    height: 100vh;
+    display: grid;/*preencher lacunas(buracos)*/
+    grid-template-columns: 50% 50%; /*ocupará espaço de coluna*/
+}
+
+.container_botao{
+    background-color: var(--botao-azul);
+    border-radius: 5px; /*para bordas ficar arredondadas*/
+    padding: 1rem; /*o padding vai acompanhar o tamanho da fonte */
+    color: var(--branco-principal); /*cor da fonte da letra*/
+    display: block;/*ocupar o espaço inteiro*/
+    text-decoration: none; /*tirar o sublinhado*/
+    margin-bottom: 1em;
+
+}
+
+.botao_secundario{
+    background-color: transparent;
+    border:  2px solid var(--branco-principal);
+}
+
+.container_aviso{
+    font-size: 12px;
+    color: var(--cinza-secundaria);
+}
+
+.container_imagem{
+    margin: 1em 0 2em 0; /*para ter uma espacamento do canto da tela (os 4 valores representa um relogio no sentido horario: 1rem = 12hr (cima), 0 = 3hr (direita), 2rem = 6hr (baixo), 0 = 9hr (esquerda))*/
+}
+
+.container_caixa{
+    margin: 0 6em;
+}
+
+
+/********    parte da plataformas     *******/
+
+.secundario{
+    align-items: center;
+    margin: 0 10em; /*ter um espaçamento da esquerda e direita*/
+}
+
+.secundario_imagem{
+    width: 80%;
+}
+
+.container_descricao{
+    padding: 2em;
+}
+
+.descricao_titulo{
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+
+.descricao_texto{
+    color: var(--cinza-secundaria);
+
+}
+
+
+/********    combo+         ********/
+.secundario_botao{
+    display: inline-block;/*vai pegar as melhoras parte do inline e do block*/
+    margin-top: 1em;
+}
+
+
+/***********   Dispositivos     ***********/
+
+
+.dispositivos_lista{
+    display: flex; /*colocar um do lado do outrox, vai ficar na mesma linha*/
+    justify-content: center;
+    list-style-type: none; /*tirar os pontos da lista*/
+    margin: 5em 0;
+}
+
+.dispositivos{
+    text-align: center;
+}
+
+.dispositivos_titulo{
+    font-size: 48px;
+    color: var(--branco-principal);
+}
+
+.lista_item{
+    font-size: 32px;
+    color: var(--branco-principal);
+}
+
+
+/*************  rodape   ****************/
+
+.rodape{
+    text-align: center;
+    margin: 5em 3em;
+}
+
+.rodape_logo{
+    margin-bottom: 2em;
+}
+
+.rodape_lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 1em;
+}
+
+
+.lista_link a{
+    color: var(--branco-principal);
+    text-decoration: none;
+    margin-left: 1em;
+}
+
+.rodape_texto{
+    margin: 1em 0;
+    font-size: 14px;
+    color: var(--cinza-secundaria);
+}
+
+.lista_link a:hover{
+    color: var(--botao-azul);
+}
+
+.lista_link a:active{
+    color: rgb(167, 0, 167);
+}
+
+.container_botao:hover{
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-do-fundo);
+}
